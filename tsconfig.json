@@ -19,12 +19,13 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-      "@/components/*": ["./src/app/components/*"],
+      "@/*": ["./*"],
+      "@/app/*": ["./src/app/*"],
+      "@/components": ["./src/app/components/index.ts"],
       "@/components/ui/*": ["./src/app/components/ui/*"],
       "@/logos/*": ["./assets/img/logos/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "tailwind.config.js"],
   "exclude": ["node_modules"]
 }
